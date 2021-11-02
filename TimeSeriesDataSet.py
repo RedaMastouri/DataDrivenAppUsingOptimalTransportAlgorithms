@@ -66,11 +66,11 @@ six_months_ago = past_six_month_date()
 today = date.today()
 
 #For printing results
-print("Today's date:", today)
-print("Exactly 6 months date:", six_months_ago)
+#print("Today's date:", today)
+#print("Exactly 6 months date:", six_months_ago)
 
 
-# ### Imlepenting tiingo.com:
+# ### Implementing tiingo.com:
 # A financial research platform dedicated to creating innovative financial tools for all, while adopting the motto, **"Actively Do Good"**.
 # 
 
@@ -98,25 +98,63 @@ def get_adjusted_close(ticker, start, end, token):
 # In[5]:
 
 
-for ticker in TICKERS:
-    #Dynamically create Data frames
-    vars()[ticker] = pdr.get_data_tiingo(ticker, start, end, api_key=token)
-
-
-# In[6]:
-
-
-TICKERS_Frames = [ AAPL, MSFT, Goog, AMZN, TSLA]
 def returned_dataFrame(list_of_frame):
     df = pd.concat(list_of_frame)
     return df
 
 
+# In[6]:
+
+
+def build_dataset(ticker):
+    from tiingo import TiingoClient
+    config = {}
+    # To reuse the same HTTP Session across API calls (and have better performance),
+    config['session'] = True
+    # If you don't have your API key as an environment variable,
+    # pass it in via a configuration dictionary.
+    config['api_key'] = "2d10bb042e786244063efc000e6dc15e79b07274"
+    # Initialize
+    client = TiingoClient(config)
+    
+    
+    
+    df = client.get_dataframe(ticker, startDate = six_months_ago, endDate= today, frequency='daily', metric_name=None)
+    return df
+
+
+# In[7]:
+
+
+
+#df = build_dataset('AAPL')
+
+
 # In[8]:
 
 
-df = returned_dataFrame(TICKERS_Frames)
-df.head()
+TICKERS_Frames = ['AAPL', 'MSFT', 'Goog', 'AMZN', 'TSLA']
+AAPL = build_dataset(TICKERS_Frames[0]) 
+MSFT = build_dataset(TICKERS_Frames[1]) 
+Goog = build_dataset(TICKERS_Frames[2]) 
+AMZN = build_dataset(TICKERS_Frames[3]) 
+TSLA = build_dataset(TICKERS_Frames[4]) 
+
+
+AAPL['Ticker']= 'AAPL'
+MSFT['Ticker']= 'MSFT'
+Goog['Ticker']= 'Goog'
+AMZN['Ticker']= 'AMZN'
+TSLA['Ticker']= 'TSLA'
+
+Frames = [ AAPL, MSFT, Goog, AMZN, TSLA]
+df = pd.concat(Frames)
+
+
+# In[ ]:
+
+
+
 
 
 # 

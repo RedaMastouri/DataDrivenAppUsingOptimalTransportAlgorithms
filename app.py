@@ -7,7 +7,7 @@
 #Description
 
 
-# In[17]:
+# In[29]:
 
 
 #App builder
@@ -25,14 +25,15 @@ import pandas as pd
 import numpy as np
 
 #Timeseries dataframe
-from TimeSeriesDataSet import df
+from TimeSeriesDataSet import *
 
 
-# In[18]:
+# In[12]:
+
 
 
 DATA_URL = df
-st.markdown("# Stochastic Gradient Descent in Continuous time- By Joseph Bunster")
+st.markdown("# Distributional barycenter problem through data-driven flows in Continuous time- By Joseph Bunster")
 st.markdown("Explore the dataset to know more about OT based Financial Time series Dataset Linear Regression")
 img=Image.open('images/carbon.png')
 st.image(img,width=700)
@@ -52,7 +53,7 @@ source: https://www.scopus.com/record/display.uri?eid=2-s2.0-85041577966&origin=
 st.markdown("The data presented are of 5 different companies - **Microsoft, Apple, Tesla, Google and Amazon,** collected from Tiingo API **https://www.tiingo.com.**")
 
 
-# In[19]:
+# In[13]:
 
 
 if st.button("Learn more about Joseph Bunster and data processed"):
@@ -66,7 +67,7 @@ if st.button("Learn more about Joseph Bunster and data processed"):
     st.balloons()
 
 
-# In[20]:
+# In[14]:
 
 
 st.info(''' The optimal transport theory is the study of optimal transportation and allocation between measures.
@@ -77,7 +78,8 @@ img=Image.open("images/OT.jpg")
 st.image(img,width=700)
 
 
-# In[25]:
+# In[15]:
+
 
 
 st.sidebar.markdown("## Side Panel")
@@ -96,7 +98,7 @@ images=Image.open('images/bot.png')
 st.image(images,width=150)
 
 
-# In[26]:
+# In[16]:
 
 
 # Showing the original raw data
@@ -130,10 +132,10 @@ if st.sidebar.checkbox('Dataset Another Quick Look'):
     st.write(df.head())
 
 
-# In[27]:
+# In[17]:
 
 
-st.title('Create Own Visualization')
+st.title('Create Custom Visualization')
 st.markdown("Tick the box on the side panel to create your own Visualization.")
 st.sidebar.subheader('Create Own Visualization')
 if st.sidebar.checkbox('Graphics'):
@@ -169,7 +171,7 @@ if st.sidebar.checkbox('Graphics'):
         st.pyplot()
 
 
-# In[28]:
+# In[18]:
 
 
 st.sidebar.markdown("[Data Source](https://www.ttingo.com)")
@@ -178,13 +180,7 @@ st.sidebar.info("Self Exploratory Visualization using Optimal Transport on Finan
 st.sidebar.text("Built with  ❤️ by Joe Bunster")
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
+# In[22]:
 
 
 
