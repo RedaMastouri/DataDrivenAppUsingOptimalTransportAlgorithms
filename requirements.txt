@@ -18,3 +18,7 @@ yfinance==0.1.64
 sklearn==0.0
 python-dateutil==2.8.2
 tiingo==0.14.0
+panel==0.12.4
+bokeh==2.4.1
+hvplot==0.7.3
+holoviews==1.14.6
