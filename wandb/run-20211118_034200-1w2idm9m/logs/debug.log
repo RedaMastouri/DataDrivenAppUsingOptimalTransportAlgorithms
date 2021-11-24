@@ -1,0 +1,24 @@
+2021-11-18 03:42:00,206 INFO    ScriptRunner.scriptThread:3780 [wandb_setup.py:_flush():71] setting env: {}
+2021-11-18 03:42:00,206 INFO    ScriptRunner.scriptThread:3780 [wandb_setup.py:_flush():71] setting login settings: {}
+2021-11-18 03:42:00,210 INFO    ScriptRunner.scriptThread:3780 [wandb_init.py:_log_setup():357] Logging user logs to C:\Users\rmastour\Desktop\Data_Driven_Apps\aloha\DataDrivenAppUsingOptimalTransportAlgorithms\wandb\run-20211118_034200-1w2idm9m\logs\debug.log
+2021-11-18 03:42:00,210 INFO    ScriptRunner.scriptThread:3780 [wandb_init.py:_log_setup():358] Logging internal logs to C:\Users\rmastour\Desktop\Data_Driven_Apps\aloha\DataDrivenAppUsingOptimalTransportAlgorithms\wandb\run-20211118_034200-1w2idm9m\logs\debug-internal.log
+2021-11-18 03:42:00,210 INFO    ScriptRunner.scriptThread:3780 [wandb_init.py:init():390] calling init triggers
+2021-11-18 03:42:00,210 INFO    ScriptRunner.scriptThread:3780 [wandb_init.py:init():395] wandb.init called with sweep_config: {}
+config: {}
+2021-11-18 03:42:00,210 INFO    ScriptRunner.scriptThread:3780 [wandb_init.py:init():432] wandb.init() called when a run is still active
+2021-11-18 03:49:58,860 INFO    ScriptRunner.scriptThread:3780 [wandb_setup.py:_flush():71] setting env: {}
+2021-11-18 03:49:58,876 INFO    ScriptRunner.scriptThread:3780 [wandb_setup.py:_flush():71] setting login settings: {}
+2021-11-18 03:49:58,876 INFO    ScriptRunner.scriptThread:3780 [wandb_init.py:_log_setup():357] Logging user logs to C:\Users\rmastour\Desktop\Data_Driven_Apps\aloha\DataDrivenAppUsingOptimalTransportAlgorithms\wandb\run-20211118_034958-39wgdyuv\logs\debug.log
+2021-11-18 03:49:58,876 INFO    ScriptRunner.scriptThread:3780 [wandb_init.py:_log_setup():358] Logging internal logs to C:\Users\rmastour\Desktop\Data_Driven_Apps\aloha\DataDrivenAppUsingOptimalTransportAlgorithms\wandb\run-20211118_034958-39wgdyuv\logs\debug-internal.log
+2021-11-18 03:49:58,876 INFO    ScriptRunner.scriptThread:3780 [wandb_init.py:init():390] calling init triggers
+2021-11-18 03:49:58,876 INFO    ScriptRunner.scriptThread:3780 [wandb_init.py:init():395] wandb.init called with sweep_config: {}
+config: {}
+2021-11-18 03:49:58,876 INFO    ScriptRunner.scriptThread:3780 [wandb_init.py:init():432] wandb.init() called when a run is still active
+2021-11-18 03:50:17,214 INFO    ScriptRunner.scriptThread:3780 [wandb_setup.py:_flush():71] setting env: {}
+2021-11-18 03:50:17,214 INFO    ScriptRunner.scriptThread:3780 [wandb_setup.py:_flush():71] setting login settings: {}
+2021-11-18 03:50:17,214 INFO    ScriptRunner.scriptThread:3780 [wandb_init.py:_log_setup():357] Logging user logs to C:\Users\rmastour\Desktop\Data_Driven_Apps\aloha\DataDrivenAppUsingOptimalTransportAlgorithms\wandb\run-20211118_035017-2x1zq6as\logs\debug.log
+2021-11-18 03:50:17,214 INFO    ScriptRunner.scriptThread:3780 [wandb_init.py:_log_setup():358] Logging internal logs to C:\Users\rmastour\Desktop\Data_Driven_Apps\aloha\DataDrivenAppUsingOptimalTransportAlgorithms\wandb\run-20211118_035017-2x1zq6as\logs\debug-internal.log
+2021-11-18 03:50:17,214 INFO    ScriptRunner.scriptThread:3780 [wandb_init.py:init():390] calling init triggers
+2021-11-18 03:50:17,214 INFO    ScriptRunner.scriptThread:3780 [wandb_init.py:init():395] wandb.init called with sweep_config: {}
+config: {}
+2021-11-18 03:50:17,214 INFO    ScriptRunner.scriptThread:3780 [wandb_init.py:init():432] wandb.init() called when a run is still active

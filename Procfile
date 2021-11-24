@@ -1,1 +1,1 @@
-web: panel serve  --address="0.0.0.0" --port=$PORT panel_app.ipynb --allow-websocket-origin=bunsterpanelapp.herokuapp.com
+web: streamlit run  --server.port $PORT app.py

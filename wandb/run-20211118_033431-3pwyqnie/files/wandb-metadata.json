@@ -1,0 +1,22 @@
+{
+    "os": "Windows-10-10.0.19042-SP0",
+    "python": "3.8.10",
+    "heartbeatAt": "2021-11-18T08:34:40.946310",
+    "startedAt": "2021-11-18T08:34:31.289992",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "C:\\Users\\rmastour\\Desktop\\Data_Driven_Apps\\aloha\\DataDrivenAppUsingOptimalTransportAlgorithms\\app.py",
+    "codePath": "app.py",
+    "git": {
+        "remote": "https://github.com/RedaMastouri/DataDrivenAppUsingOptimalTransportAlgorithms.git",
+        "commit": "4c4ea08288a692c0ba6065ef738a551c8b3a1ff9"
+    },
+    "email": "reda.mastouri@rutgers.edu",
+    "root": "C:/Users/rmastour/Desktop/Data_Driven_Apps/aloha/DataDrivenAppUsingOptimalTransportAlgorithms",
+    "host": "EWR9-5CG8253VJW",
+    "username": "rmastour",
+    "executable": "c:\\users\\rmastour\\anaconda3\\python.exe"
+}
