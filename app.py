@@ -2206,8 +2206,8 @@ def main():
 
 For algorithms relying on Gradient Descent to optimize model parameters, every function has to be differentiable.
     ''')
-    cost_pic=Image.open('images/1-cost_func.png')
-    st.image(cost_pic,width=700)
+    #cost_pic=Image.open('images/1-cost_func.png')
+    #st.image(cost_pic,width=700)
     # 1- Cost function 1: Euclidian Distance
     token_text = '<p style="color:green; font-size: 20px;"><b>1- Cost function 1: Euclidian Distance</b></p>'
     st.markdown(token_text, unsafe_allow_html=True)
