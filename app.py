@@ -2205,9 +2205,10 @@ def main():
 - **Maximized** - then the value it yields is named a reward. The goal is to find values of model parameters for which returned number is as large as possible.
 
 For algorithms relying on Gradient Descent to optimize model parameters, every function has to be differentiable.
+
+$$C(y(x,k), ρ)) = 1/N^{2} \sum_{1\le i\not\equiv j\le N} [[{\parallel y^{k}_i - y^{k}_j \parallel ^{2} }\div ({x^{k}_i - x^{k}_j \parallel ^{2} + \epsilon^{2})} - 1]] + \omega * 1/N \sum_{i=1}^{N} \parallel y^{k}_i - x^{k}_i \parallel ^{2}$$
     ''')
-    cost_pic=Image.open('1-cost_func.PNG')
-    st.image(cost_pic,width=700)
+
     # 1- Cost function 1: Euclidian Distance
     token_text = '<p style="color:green; font-size: 20px;"><b>1- Cost function 1: Euclidian Distance</b></p>'
     st.markdown(token_text, unsafe_allow_html=True)
@@ -3238,7 +3239,7 @@ $${Z}^{\sim}= DKD$$; where $$D$$ is a diagonal matrix with positive diagonalentr
     token_text = '<p style="color:green; font-size: 20px;"><b>2- Glossary</b></p>'
     st.markdown(token_text, unsafe_allow_html=True)
     # Get some infor about what was mentioned.
-    glossaire = [['Transportation theory', '''In mathematics and economics, transportation theory or transport theory is a name given to the study of optimal transportation and allocation of resources. The problem was formalized by the French mathematician Gaspard Monge in 1781. In the 1920s A.N.'''], 
+    glossaire = [['Transportation theory', '''In mathematics and economics, transportation theory or transport theory is a name given to the study of optimal transportation and allocation of resources. The problem was formalized by the French mathematician Gaspard Monge in 1781. In the 1920s A.N. '''], 
                  ['Wasserstein metric', 'In mathematics, the Wasserstein distance or Kantorovich–Rubinstein metric is a distance function defined between probability distributions on a given metric space M.'], 
                  ['Loss function', 'In mathematical optimization and decision theory, a loss function or cost function is a function that maps an event or values of one or more variables onto a real number intuitively representing some "cost" associated with the event. An optimization problem seeks to minimize a loss function'],
                 ['Sinkhorn Knopp','The Sinkhorn-Knopp algorithm takes a matrix A and finds diagonal matrices D and E such that if M = DAE the sum of each column and each row of M is unity. The method is, in effect, to alternately normalise the rows and the columns of the matrix. ... Such matrices have various applications, including web page ranking'],
